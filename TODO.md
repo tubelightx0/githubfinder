@@ -1,5 +1,0 @@
-- [ ] Inspect current UI structure (index.html) and styling hooks (style.css)
-- [ ] Update style.css for a cleaner minimal-modern UI (CSS-only)
-- [ ] Ensure all existing JS selectors still work (no class rename)
-- [ ] Quick manual test: load page, search existing + non-existing user, verify hide/show + error
-- [ ] Confirm mobile responsiveness
