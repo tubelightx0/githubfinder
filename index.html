@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f4efe6">
+    <title>GitHub Finder</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <main class="page">
+        <div class="orb orb-one"></div>
+        <div class="orb orb-two"></div>
+
+        <section class="shell">
+            <header class="hero">
+                <div class="brandMark">桜</div>
+                <div class="heroCopy">
+                    <p class="eyebrow">GitHub profile search</p>
+                    <h1>Github Finder</h1>
+                    <p class="subtitle">A calm, Japanese-inspired interface for quickly finding GitHub profiles.</p>
+                </div>
+            </header>
+
+            <section class="searchPanel" aria-label="Search GitHub user">
+                <div class="search">
+                    <input type="text" placeholder="Search GitHub username" class="searchInput" aria-label="GitHub username">
+                    <button type="button" class="searchBtn"><i class="fa fa-search"></i> <span class="buttonLabel">Search</span></button>
+                </div>
+                <p class="hint">Type a username and press Enter for a soft, instant preview.</p>
+            </section>
+
+            <p class="errorMsg hidden" role="status" aria-live="polite"></p>
+
+            <section class="results hidden">
+                <article class="user profileCard hidden">
+                    <img src="" alt="" class="userLogo">
+                    <div class="profileCopy">
+                        <p class="label">Profile</p>
+                        <p class="userName"></p>
+                        <p class="userLocation"></p>
+                    </div>
+                </article>
+
+                <div class="statsGrid">
+                    <article class="repoCount statCard hidden"></article>
+                    <article class="followup statCard hidden">
+                        <p class="userFollowers"></p>
+                        <p class="userFollowing"></p>
+                    </article>
+                </div>
+
+                <article class="bio bioCard hidden">
+                    <p class="label">Bio</p>
+                    <p class="userBio"></p>
+                </article>
+                <div class="topRepos">
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
